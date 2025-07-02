@@ -1,0 +1,106 @@
+{
+  "@@locale": "fr",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Titre de l'application"
+  },
+  "appSubtitle": "Jeu du Pendu Moderne",
+  "@appSubtitle": {
+    "description": "Sous-titre de l'application"
+  },
+  "chooseCategory": "Choisissez une catégorie pour commencer",
+  "@chooseCategory": {
+    "description": "Instruction pour choisir une catégorie"
+  },
+  "settings": "Paramètres",
+  "@settings": {
+    "description": "Bouton paramètres"
+  },
+  "animals": "Animaux",
+  "@animals": {
+    "description": "Catégorie animaux"
+  },
+  "fruits": "Fruits",
+  "@fruits": {
+    "description": "Catégorie fruits"
+  },
+  "objects": "Objets",
+  "@objects": {
+    "description": "Catégorie objets"
+  },
+  "professions": "Professions",
+  "@professions": {
+    "description": "Catégorie professions"
+  },
+  "verbs": "Verbes",
+  "@verbs": {
+    "description": "Catégorie verbes"
+  },
+  "countries": "Pays",
+  "@countries": {
+    "description": "Catégorie pays"
+  },
+  "word": "Mot",
+  "@word": {
+    "description": "Étiquette mot"
+  },
+  "remainingAttempts": "Tentatives restantes: {count}",
+  "@remainingAttempts": {
+    "description": "Tentatives restantes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Choisissez une lettre",
+  "@chooseALetter": {
+    "description": "Instruction du clavier"
+  },
+  "correct": "Correct",
+  "@correct": {
+    "description": "Bonnes réponses"
+  },
+  "wrong": "Erreurs",
+  "@wrong": {
+    "description": "Erreurs"
+  },
+  "remaining": "Restantes",
+  "@remaining": {
+    "description": "Restantes"
+  },
+  "congratulations": "Félicitations!",
+  "@congratulations": {
+    "description": "Message de victoire"
+  },
+  "tooBad": "Dommage!",
+  "@tooBad": {
+    "description": "Message de défaite"
+  },
+  "youFoundTheWord": "Vous avez trouvé le mot!",
+  "@youFoundTheWord": {
+    "description": "Message détaillé de victoire"
+  },
+  "theWordWas": "Le mot était:",
+  "@theWordWas": {
+    "description": "Message détaillé de défaite"
+  },
+  "home": "Accueil",
+  "@home": {
+    "description": "Bouton accueil"
+  },
+  "playAgain": "Rejouer",
+  "@playAgain": {
+    "description": "Bouton rejouer"
+  },
+  "wordsCount": "{count} mots",
+  "@wordsCount": {
+    "description": "Compteur de mots",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

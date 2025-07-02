@@ -1,0 +1,106 @@
+{
+  "@@locale": "zh",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "应用程序标题"
+  },
+  "appSubtitle": "现代猜词游戏",
+  "@appSubtitle": {
+    "description": "应用程序副标题"
+  },
+  "chooseCategory": "选择一个类别开始",
+  "@chooseCategory": {
+    "description": "选择类别的指示"
+  },
+  "settings": "设置",
+  "@settings": {
+    "description": "设置按钮"
+  },
+  "animals": "动物",
+  "@animals": {
+    "description": "动物类别"
+  },
+  "fruits": "水果",
+  "@fruits": {
+    "description": "水果类别"
+  },
+  "objects": "物品",
+  "@objects": {
+    "description": "物品类别"
+  },
+  "professions": "职业",
+  "@professions": {
+    "description": "职业类别"
+  },
+  "verbs": "动词",
+  "@verbs": {
+    "description": "动词类别"
+  },
+  "countries": "国家",
+  "@countries": {
+    "description": "国家类别"
+  },
+  "word": "单词",
+  "@word": {
+    "description": "单词标签"
+  },
+  "remainingAttempts": "剩余尝试次数: {count}",
+  "@remainingAttempts": {
+    "description": "剩余尝试次数",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "选择一个字母",
+  "@chooseALetter": {
+    "description": "键盘指示"
+  },
+  "correct": "正确",
+  "@correct": {
+    "description": "正确答案"
+  },
+  "wrong": "错误",
+  "@wrong": {
+    "description": "错误"
+  },
+  "remaining": "剩余",
+  "@remaining": {
+    "description": "剩余"
+  },
+  "congratulations": "恭喜！",
+  "@congratulations": {
+    "description": "胜利消息"
+  },
+  "tooBad": "太遗憾了！",
+  "@tooBad": {
+    "description": "失败消息"
+  },
+  "youFoundTheWord": "你找到了单词！",
+  "@youFoundTheWord": {
+    "description": "详细胜利消息"
+  },
+  "theWordWas": "单词是:",
+  "@theWordWas": {
+    "description": "详细失败消息"
+  },
+  "home": "主页",
+  "@home": {
+    "description": "主页按钮"
+  },
+  "playAgain": "再玩一次",
+  "@playAgain": {
+    "description": "再玩一次按钮"
+  },
+  "wordsCount": "{count} 个单词",
+  "@wordsCount": {
+    "description": "单词计数器",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

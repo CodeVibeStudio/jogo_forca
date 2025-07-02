@@ -1,0 +1,106 @@
+{
+  "@@locale": "ja",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "アプリケーションタイトル"
+  },
+  "appSubtitle": "モダンハングマンゲーム",
+  "@appSubtitle": {
+    "description": "アプリケーションサブタイトル"
+  },
+  "chooseCategory": "開始するカテゴリを選択してください",
+  "@chooseCategory": {
+    "description": "カテゴリ選択の指示"
+  },
+  "settings": "設定",
+  "@settings": {
+    "description": "設定ボタン"
+  },
+  "animals": "動物",
+  "@animals": {
+    "description": "動物カテゴリ"
+  },
+  "fruits": "果物",
+  "@fruits": {
+    "description": "果物カテゴリ"
+  },
+  "objects": "物体",
+  "@objects": {
+    "description": "物体カテゴリ"
+  },
+  "professions": "職業",
+  "@professions": {
+    "description": "職業カテゴリ"
+  },
+  "verbs": "動詞",
+  "@verbs": {
+    "description": "動詞カテゴリ"
+  },
+  "countries": "国",
+  "@countries": {
+    "description": "国カテゴリ"
+  },
+  "word": "単語",
+  "@word": {
+    "description": "単語ラベル"
+  },
+  "remainingAttempts": "残り試行回数: {count}",
+  "@remainingAttempts": {
+    "description": "残り試行回数",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "文字を選択してください",
+  "@chooseALetter": {
+    "description": "キーボードの指示"
+  },
+  "correct": "正解",
+  "@correct": {
+    "description": "正解"
+  },
+  "wrong": "間違い",
+  "@wrong": {
+    "description": "間違い"
+  },
+  "remaining": "残り",
+  "@remaining": {
+    "description": "残り"
+  },
+  "congratulations": "おめでとうございます！",
+  "@congratulations": {
+    "description": "勝利メッセージ"
+  },
+  "tooBad": "残念！",
+  "@tooBad": {
+    "description": "敗北メッセージ"
+  },
+  "youFoundTheWord": "単語を見つけました！",
+  "@youFoundTheWord": {
+    "description": "詳細な勝利メッセージ"
+  },
+  "theWordWas": "単語は:",
+  "@theWordWas": {
+    "description": "詳細な敗北メッセージ"
+  },
+  "home": "ホーム",
+  "@home": {
+    "description": "ホームボタン"
+  },
+  "playAgain": "もう一度プレイ",
+  "@playAgain": {
+    "description": "もう一度プレイボタン"
+  },
+  "wordsCount": "{count} 単語",
+  "@wordsCount": {
+    "description": "単語カウンター",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,106 @@
+{
+  "@@locale": "ar",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "عنوان التطبيق"
+  },
+  "appSubtitle": "لعبة الرجل المشنوق الحديثة",
+  "@appSubtitle": {
+    "description": "العنوان الفرعي للتطبيق"
+  },
+  "chooseCategory": "اختر فئة للبدء",
+  "@chooseCategory": {
+    "description": "تعليمات اختيار الفئة"
+  },
+  "settings": "الإعدادات",
+  "@settings": {
+    "description": "زر الإعدادات"
+  },
+  "animals": "الحيوانات",
+  "@animals": {
+    "description": "فئة الحيوانات"
+  },
+  "fruits": "الفواكه",
+  "@fruits": {
+    "description": "فئة الفواكه"
+  },
+  "objects": "الأشياء",
+  "@objects": {
+    "description": "فئة الأشياء"
+  },
+  "professions": "المهن",
+  "@professions": {
+    "description": "فئة المهن"
+  },
+  "verbs": "الأفعال",
+  "@verbs": {
+    "description": "فئة الأفعال"
+  },
+  "countries": "البلدان",
+  "@countries": {
+    "description": "فئة البلدان"
+  },
+  "word": "الكلمة",
+  "@word": {
+    "description": "تسمية الكلمة"
+  },
+  "remainingAttempts": "المحاولات المتبقية: {count}",
+  "@remainingAttempts": {
+    "description": "المحاولات المتبقية",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "اختر حرفاً",
+  "@chooseALetter": {
+    "description": "تعليمات لوحة المفاتيح"
+  },
+  "correct": "صحيح",
+  "@correct": {
+    "description": "الإجابات الصحيحة"
+  },
+  "wrong": "خطأ",
+  "@wrong": {
+    "description": "الأخطاء"
+  },
+  "remaining": "المتبقي",
+  "@remaining": {
+    "description": "المتبقي"
+  },
+  "congratulations": "تهانينا!",
+  "@congratulations": {
+    "description": "رسالة النصر"
+  },
+  "tooBad": "للأسف!",
+  "@tooBad": {
+    "description": "رسالة الهزيمة"
+  },
+  "youFoundTheWord": "لقد وجدت الكلمة!",
+  "@youFoundTheWord": {
+    "description": "رسالة النصر التفصيلية"
+  },
+  "theWordWas": "كانت الكلمة:",
+  "@theWordWas": {
+    "description": "رسالة الهزيمة التفصيلية"
+  },
+  "home": "الرئيسية",
+  "@home": {
+    "description": "زر الرئيسية"
+  },
+  "playAgain": "العب مرة أخرى",
+  "@playAgain": {
+    "description": "زر العب مرة أخرى"
+  },
+  "wordsCount": "{count} كلمات",
+  "@wordsCount": {
+    "description": "عداد الكلمات",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

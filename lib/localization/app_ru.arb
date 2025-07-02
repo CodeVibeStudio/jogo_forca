@@ -1,0 +1,106 @@
+{
+  "@@locale": "ru",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Название приложения"
+  },
+  "appSubtitle": "Современная игра в виселицу",
+  "@appSubtitle": {
+    "description": "Подзаголовок приложения"
+  },
+  "chooseCategory": "Выберите категорию для начала",
+  "@chooseCategory": {
+    "description": "Инструкция по выбору категории"
+  },
+  "settings": "Настройки",
+  "@settings": {
+    "description": "Кнопка настроек"
+  },
+  "animals": "Животные",
+  "@animals": {
+    "description": "Категория животные"
+  },
+  "fruits": "Фрукты",
+  "@fruits": {
+    "description": "Категория фрукты"
+  },
+  "objects": "Предметы",
+  "@objects": {
+    "description": "Категория предметы"
+  },
+  "professions": "Профессии",
+  "@professions": {
+    "description": "Категория профессии"
+  },
+  "verbs": "Глаголы",
+  "@verbs": {
+    "description": "Категория глаголы"
+  },
+  "countries": "Страны",
+  "@countries": {
+    "description": "Категория страны"
+  },
+  "word": "Слово",
+  "@word": {
+    "description": "Метка слова"
+  },
+  "remainingAttempts": "Осталось попыток: {count}",
+  "@remainingAttempts": {
+    "description": "Оставшиеся попытки",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Выберите букву",
+  "@chooseALetter": {
+    "description": "Инструкция клавиатуры"
+  },
+  "correct": "Правильно",
+  "@correct": {
+    "description": "Правильные ответы"
+  },
+  "wrong": "Ошибки",
+  "@wrong": {
+    "description": "Ошибки"
+  },
+  "remaining": "Осталось",
+  "@remaining": {
+    "description": "Осталось"
+  },
+  "congratulations": "Поздравляем!",
+  "@congratulations": {
+    "description": "Сообщение о победе"
+  },
+  "tooBad": "Жаль!",
+  "@tooBad": {
+    "description": "Сообщение о поражении"
+  },
+  "youFoundTheWord": "Вы нашли слово!",
+  "@youFoundTheWord": {
+    "description": "Подробное сообщение о победе"
+  },
+  "theWordWas": "Слово было:",
+  "@theWordWas": {
+    "description": "Подробное сообщение о поражении"
+  },
+  "home": "Главная",
+  "@home": {
+    "description": "Кнопка главная"
+  },
+  "playAgain": "Играть снова",
+  "@playAgain": {
+    "description": "Кнопка играть снова"
+  },
+  "wordsCount": "{count} слов",
+  "@wordsCount": {
+    "description": "Счетчик слов",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

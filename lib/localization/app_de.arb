@@ -1,0 +1,106 @@
+{
+  "@@locale": "de",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Anwendungstitel"
+  },
+  "appSubtitle": "Modernes Galgenmännchen-Spiel",
+  "@appSubtitle": {
+    "description": "Anwendungsuntertitel"
+  },
+  "chooseCategory": "Wählen Sie eine Kategorie zum Starten",
+  "@chooseCategory": {
+    "description": "Anweisung zur Kategorieauswahl"
+  },
+  "settings": "Einstellungen",
+  "@settings": {
+    "description": "Einstellungen-Button"
+  },
+  "animals": "Tiere",
+  "@animals": {
+    "description": "Kategorie Tiere"
+  },
+  "fruits": "Früchte",
+  "@fruits": {
+    "description": "Kategorie Früchte"
+  },
+  "objects": "Objekte",
+  "@objects": {
+    "description": "Kategorie Objekte"
+  },
+  "professions": "Berufe",
+  "@professions": {
+    "description": "Kategorie Berufe"
+  },
+  "verbs": "Verben",
+  "@verbs": {
+    "description": "Kategorie Verben"
+  },
+  "countries": "Länder",
+  "@countries": {
+    "description": "Kategorie Länder"
+  },
+  "word": "Wort",
+  "@word": {
+    "description": "Wort-Label"
+  },
+  "remainingAttempts": "Verbleibende Versuche: {count}",
+  "@remainingAttempts": {
+    "description": "Verbleibende Versuche",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Wählen Sie einen Buchstaben",
+  "@chooseALetter": {
+    "description": "Tastatur-Anweisung"
+  },
+  "correct": "Richtig",
+  "@correct": {
+    "description": "Richtige Antworten"
+  },
+  "wrong": "Falsch",
+  "@wrong": {
+    "description": "Falsche Antworten"
+  },
+  "remaining": "Verbleibend",
+  "@remaining": {
+    "description": "Verbleibend"
+  },
+  "congratulations": "Glückwunsch!",
+  "@congratulations": {
+    "description": "Siegesnachricht"
+  },
+  "tooBad": "Schade!",
+  "@tooBad": {
+    "description": "Niederlagenachricht"
+  },
+  "youFoundTheWord": "Sie haben das Wort gefunden!",
+  "@youFoundTheWord": {
+    "description": "Detaillierte Siegesnachricht"
+  },
+  "theWordWas": "Das Wort war:",
+  "@theWordWas": {
+    "description": "Detaillierte Niederlagenachricht"
+  },
+  "home": "Startseite",
+  "@home": {
+    "description": "Startseite-Button"
+  },
+  "playAgain": "Nochmal spielen",
+  "@playAgain": {
+    "description": "Nochmal spielen-Button"
+  },
+  "wordsCount": "{count} Wörter",
+  "@wordsCount": {
+    "description": "Wortzähler",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

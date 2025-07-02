@@ -1,0 +1,59 @@
+name: wordrope
+description: "WordRope - Jogo da Forca Moderno com suporte multiplataforma"
+publish_to: "none"
+
+version: 1.0.2+14
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  showcaseview: ^3.0.0 # Ou a versão mais recente que encontrar
+
+  # UI e Design
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0
+  url_launcher: ^6.2.6
+  font_awesome_flutter: ^10.7.0
+
+  # Gerenciamento de Estado
+  provider: ^6.1.1
+
+  # Armazenamento Local
+  shared_preferences: ^2.2.2
+
+  # Áudio
+  audioplayers: ^5.2.1
+
+  # Internacionalização
+  intl: ^0.20.0
+
+  # Monetização
+  google_mobile_ads: ^4.0.0
+  in_app_purchase: ^3.1.11
+
+  # Utilitários
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
+
+flutter_launcher_icons:
+  android: true # Gera ícones para Android
+  ios: true # Gera ícones para iOS
+  image_path: "assets/icon/icon.png" # Caminho para a sua imagem

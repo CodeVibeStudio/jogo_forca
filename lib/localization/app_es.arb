@@ -1,0 +1,106 @@
+{
+  "@@locale": "es",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Título de la aplicación"
+  },
+  "appSubtitle": "Juego del Ahorcado Moderno",
+  "@appSubtitle": {
+    "description": "Subtítulo de la aplicación"
+  },
+  "chooseCategory": "Elige una categoría para empezar",
+  "@chooseCategory": {
+    "description": "Instrucción para elegir categoría"
+  },
+  "settings": "Configuración",
+  "@settings": {
+    "description": "Botón de configuración"
+  },
+  "animals": "Animales",
+  "@animals": {
+    "description": "Categoría animales"
+  },
+  "fruits": "Frutas",
+  "@fruits": {
+    "description": "Categoría frutas"
+  },
+  "objects": "Objetos",
+  "@objects": {
+    "description": "Categoría objetos"
+  },
+  "professions": "Profesiones",
+  "@professions": {
+    "description": "Categoría profesiones"
+  },
+  "verbs": "Verbos",
+  "@verbs": {
+    "description": "Categoría verbos"
+  },
+  "countries": "Países",
+  "@countries": {
+    "description": "Categoría países"
+  },
+  "word": "Palabra",
+  "@word": {
+    "description": "Etiqueta palabra"
+  },
+  "remainingAttempts": "Intentos restantes: {count}",
+  "@remainingAttempts": {
+    "description": "Intentos restantes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Elige una letra",
+  "@chooseALetter": {
+    "description": "Instrucción del teclado"
+  },
+  "correct": "Aciertos",
+  "@correct": {
+    "description": "Aciertos"
+  },
+  "wrong": "Errores",
+  "@wrong": {
+    "description": "Errores"
+  },
+  "remaining": "Restantes",
+  "@remaining": {
+    "description": "Restantes"
+  },
+  "congratulations": "¡Felicidades!",
+  "@congratulations": {
+    "description": "Mensaje de victoria"
+  },
+  "tooBad": "¡Qué lástima!",
+  "@tooBad": {
+    "description": "Mensaje de derrota"
+  },
+  "youFoundTheWord": "¡Encontraste la palabra!",
+  "@youFoundTheWord": {
+    "description": "Mensaje detallado de victoria"
+  },
+  "theWordWas": "La palabra era:",
+  "@theWordWas": {
+    "description": "Mensaje detallado de derrota"
+  },
+  "home": "Inicio",
+  "@home": {
+    "description": "Botón inicio"
+  },
+  "playAgain": "Jugar de Nuevo",
+  "@playAgain": {
+    "description": "Botón jugar de nuevo"
+  },
+  "wordsCount": "{count} palabras",
+  "@wordsCount": {
+    "description": "Contador de palabras",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

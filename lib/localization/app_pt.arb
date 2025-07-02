@@ -1,0 +1,106 @@
+{
+  "@@locale": "pt",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Título do aplicativo"
+  },
+  "appSubtitle": "Jogo da Forca Moderno",
+  "@appSubtitle": {
+    "description": "Subtítulo do aplicativo"
+  },
+  "chooseCategory": "Escolha uma categoria para começar",
+  "@chooseCategory": {
+    "description": "Instrução para escolher categoria"
+  },
+  "settings": "Configurações",
+  "@settings": {
+    "description": "Botão de configurações"
+  },
+  "animals": "Animais",
+  "@animals": {
+    "description": "Categoria animais"
+  },
+  "fruits": "Frutas",
+  "@fruits": {
+    "description": "Categoria frutas"
+  },
+  "objects": "Objetos",
+  "@objects": {
+    "description": "Categoria objetos"
+  },
+  "professions": "Profissões",
+  "@professions": {
+    "description": "Categoria profissões"
+  },
+  "verbs": "Verbos",
+  "@verbs": {
+    "description": "Categoria verbos"
+  },
+  "countries": "Países",
+  "@countries": {
+    "description": "Categoria países"
+  },
+  "word": "Palavra",
+  "@word": {
+    "description": "Label para palavra"
+  },
+  "remainingAttempts": "Tentativas restantes: {count}",
+  "@remainingAttempts": {
+    "description": "Tentativas restantes",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Escolha uma letra",
+  "@chooseALetter": {
+    "description": "Instrução do teclado"
+  },
+  "correct": "Acertos",
+  "@correct": {
+    "description": "Acertos"
+  },
+  "wrong": "Erros",
+  "@wrong": {
+    "description": "Erros"
+  },
+  "remaining": "Restantes",
+  "@remaining": {
+    "description": "Restantes"
+  },
+  "congratulations": "Parabéns!",
+  "@congratulations": {
+    "description": "Mensagem de vitória"
+  },
+  "tooBad": "Que pena!",
+  "@tooBad": {
+    "description": "Mensagem de derrota"
+  },
+  "youFoundTheWord": "Você descobriu a palavra!",
+  "@youFoundTheWord": {
+    "description": "Mensagem de vitória detalhada"
+  },
+  "theWordWas": "A palavra era:",
+  "@theWordWas": {
+    "description": "Mensagem de derrota detalhada"
+  },
+  "home": "Início",
+  "@home": {
+    "description": "Botão início"
+  },
+  "playAgain": "Jogar Novamente",
+  "@playAgain": {
+    "description": "Botão jogar novamente"
+  },
+  "wordsCount": "{count} palavras",
+  "@wordsCount": {
+    "description": "Contador de palavras",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

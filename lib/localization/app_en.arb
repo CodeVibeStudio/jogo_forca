@@ -1,0 +1,106 @@
+{
+  "@@locale": "en",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  "appSubtitle": "Modern Hangman Game",
+  "@appSubtitle": {
+    "description": "Application subtitle"
+  },
+  "chooseCategory": "Choose a category to start",
+  "@chooseCategory": {
+    "description": "Instruction to choose category"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings button"
+  },
+  "animals": "Animals",
+  "@animals": {
+    "description": "Animals category"
+  },
+  "fruits": "Fruits",
+  "@fruits": {
+    "description": "Fruits category"
+  },
+  "objects": "Objects",
+  "@objects": {
+    "description": "Objects category"
+  },
+  "professions": "Professions",
+  "@professions": {
+    "description": "Professions category"
+  },
+  "verbs": "Verbs",
+  "@verbs": {
+    "description": "Verbs category"
+  },
+  "countries": "Countries",
+  "@countries": {
+    "description": "Countries category"
+  },
+  "word": "Word",
+  "@word": {
+    "description": "Word label"
+  },
+  "remainingAttempts": "Remaining attempts: {count}",
+  "@remainingAttempts": {
+    "description": "Remaining attempts",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Choose a letter",
+  "@chooseALetter": {
+    "description": "Keyboard instruction"
+  },
+  "correct": "Correct",
+  "@correct": {
+    "description": "Correct guesses"
+  },
+  "wrong": "Wrong",
+  "@wrong": {
+    "description": "Wrong guesses"
+  },
+  "remaining": "Remaining",
+  "@remaining": {
+    "description": "Remaining attempts"
+  },
+  "congratulations": "Congratulations!",
+  "@congratulations": {
+    "description": "Victory message"
+  },
+  "tooBad": "Too bad!",
+  "@tooBad": {
+    "description": "Defeat message"
+  },
+  "youFoundTheWord": "You found the word!",
+  "@youFoundTheWord": {
+    "description": "Detailed victory message"
+  },
+  "theWordWas": "The word was:",
+  "@theWordWas": {
+    "description": "Detailed defeat message"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home button"
+  },
+  "playAgain": "Play Again",
+  "@playAgain": {
+    "description": "Play again button"
+  },
+  "wordsCount": "{count} words",
+  "@wordsCount": {
+    "description": "Word counter",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+

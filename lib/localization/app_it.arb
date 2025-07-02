@@ -1,0 +1,106 @@
+{
+  "@@locale": "it",
+  "appTitle": "WordRope",
+  "@appTitle": {
+    "description": "Titolo dell'applicazione"
+  },
+  "appSubtitle": "Gioco dell'Impiccato Moderno",
+  "@appSubtitle": {
+    "description": "Sottotitolo dell'applicazione"
+  },
+  "chooseCategory": "Scegli una categoria per iniziare",
+  "@chooseCategory": {
+    "description": "Istruzione per scegliere la categoria"
+  },
+  "settings": "Impostazioni",
+  "@settings": {
+    "description": "Pulsante impostazioni"
+  },
+  "animals": "Animali",
+  "@animals": {
+    "description": "Categoria animali"
+  },
+  "fruits": "Frutta",
+  "@fruits": {
+    "description": "Categoria frutta"
+  },
+  "objects": "Oggetti",
+  "@objects": {
+    "description": "Categoria oggetti"
+  },
+  "professions": "Professioni",
+  "@professions": {
+    "description": "Categoria professioni"
+  },
+  "verbs": "Verbi",
+  "@verbs": {
+    "description": "Categoria verbi"
+  },
+  "countries": "Paesi",
+  "@countries": {
+    "description": "Categoria paesi"
+  },
+  "word": "Parola",
+  "@word": {
+    "description": "Etichetta parola"
+  },
+  "remainingAttempts": "Tentativi rimanenti: {count}",
+  "@remainingAttempts": {
+    "description": "Tentativi rimanenti",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "chooseALetter": "Scegli una lettera",
+  "@chooseALetter": {
+    "description": "Istruzione della tastiera"
+  },
+  "correct": "Corretti",
+  "@correct": {
+    "description": "Risposte corrette"
+  },
+  "wrong": "Errori",
+  "@wrong": {
+    "description": "Errori"
+  },
+  "remaining": "Rimanenti",
+  "@remaining": {
+    "description": "Rimanenti"
+  },
+  "congratulations": "Congratulazioni!",
+  "@congratulations": {
+    "description": "Messaggio di vittoria"
+  },
+  "tooBad": "Peccato!",
+  "@tooBad": {
+    "description": "Messaggio di sconfitta"
+  },
+  "youFoundTheWord": "Hai trovato la parola!",
+  "@youFoundTheWord": {
+    "description": "Messaggio dettagliato di vittoria"
+  },
+  "theWordWas": "La parola era:",
+  "@theWordWas": {
+    "description": "Messaggio dettagliato di sconfitta"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Pulsante home"
+  },
+  "playAgain": "Gioca Ancora",
+  "@playAgain": {
+    "description": "Pulsante gioca ancora"
+  },
+  "wordsCount": "{count} parole",
+  "@wordsCount": {
+    "description": "Contatore parole",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
+
