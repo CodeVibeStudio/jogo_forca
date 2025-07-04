@@ -23,8 +23,14 @@ class GameService extends ChangeNotifier {
   final AudioService _audioService = AudioService();
   List<Word> _availableWords = [];
 
+  // --- LÓGICA PREMIUM ---
+  bool _isPremium = false;
+  bool get isPremium => _isPremium; // Getter para a UI acessar o status
+  // --- FIM DA LÓGICA PREMIUM ---
+
   GameService(this._prefs, this.settingsService) {
     _loadScore();
+    _loadPremiumStatus(); // Carrega o status premium salvo ao iniciar
   }
 
   int get totalScore => _totalScore;
@@ -43,6 +49,20 @@ class GameService extends ChangeNotifier {
   Future<void> _saveScore() async {
     await _prefs.setInt('totalScore', _totalScore);
     await _prefs.setInt('highScore', _highScore);
+  }
+
+  /// Carrega o status de premium a partir do SharedPreferences.
+  void _loadPremiumStatus() {
+    // Lê o valor salvo. Se for a primeira vez (nulo), o padrão é 'false'.
+    _isPremium = _prefs.getBool('isPremium') ?? false;
+  }
+
+  /// Ativa o modo premium, salva o estado e notifica a UI.
+  /// Este método deve ser chamado após uma compra bem-sucedida.
+  Future<void> activatePremium() async {
+    _isPremium = true;
+    await _prefs.setBool('isPremium', true);
+    notifyListeners(); // Avisa toda a interface que o estado 'isPremium' mudou!
   }
 
   void setLanguage(String language) {
@@ -141,27 +161,14 @@ class GameService extends ChangeNotifier {
     final upperLetter = letter.toUpperCase();
     final oldWrongCount = _gameState!.wrongGuessCount;
 
-    if (_gameState!.wrongLetters.contains(upperLetter) ||
-        _gameState!.guessedLetters.contains(upperLetter)) {
-      return false;
+    if (_gameState!.guessedLetters.contains(upperLetter) ||
+        _gameState!.wrongLetters.contains(upperLetter)) {
+      return false; // Já tentou essa letra
     }
 
-    final lettersToCheck = _accentMap[upperLetter] ?? [upperLetter];
-    Set<String> correctLettersFound = {};
-
-    for (var char in lettersToCheck) {
-      if (_gameState!.currentWord.containsLetter(char)) {
-        correctLettersFound.add(char);
-      }
-    }
-
-    if (correctLettersFound.isNotEmpty) {
+    if (_gameState!.currentWord.text.contains(upperLetter)) {
       _gameState = _gameState!.copyWith(
-        guessedLetters: {
-          ..._gameState!.guessedLetters,
-          upperLetter,
-          ...correctLettersFound
-        },
+        guessedLetters: {..._gameState!.guessedLetters, upperLetter},
       );
       _audioService.playCorrectSound(
           soundEnabled: settingsService.soundEnabled);
@@ -174,17 +181,8 @@ class GameService extends ChangeNotifier {
 
     notifyListeners();
     _checkGameEnd();
-    return _gameState!.wrongGuessCount > oldWrongCount;
+    return oldWrongCount != _gameState!.wrongGuessCount;
   }
-
-  static const Map<String, List<String>> _accentMap = {
-    'A': ['A', 'Á', 'À', 'Â', 'Ã'],
-    'E': ['E', 'É', 'Ê'],
-    'I': ['I', 'Í'],
-    'O': ['O', 'Ó', 'Ô', 'Õ'],
-    'U': ['U', 'Ú'],
-    'C': ['C', 'Ç'],
-  };
 
   void _checkGameEnd() {
     if (_gameState != null && _gameState!.status != GameStatus.playing) {
@@ -195,8 +193,8 @@ class GameService extends ChangeNotifier {
         int remainingGuessesBonus = _gameState!.remainingGuesses * 10;
         _lastRoundScore = basePoints + wordLengthBonus + remainingGuessesBonus;
         _totalScore += _lastRoundScore;
-        if (_lastRoundScore > _highScore) {
-          _highScore = _lastRoundScore;
+        if (_totalScore > _highScore) {
+          _highScore = _totalScore;
         }
         _saveScore();
       } else {
@@ -215,10 +213,5 @@ class GameService extends ChangeNotifier {
         notifyListeners();
       });
     }
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
   }
 }

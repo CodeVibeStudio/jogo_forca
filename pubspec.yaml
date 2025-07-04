@@ -2,7 +2,7 @@ name: wordrope
 description: "WordRope - Jogo da Forca Moderno com suporte multiplataforma"
 publish_to: "none"
 
-version: 1.0.2+14
+version: 1.0.2+15
 
 environment:
   sdk: ^3.5.4
@@ -34,7 +34,8 @@ dependencies:
 
   # Monetização
   google_mobile_ads: ^4.0.0
-  in_app_purchase: ^3.1.11
+  in_app_purchase: ^3.2.3
+  in_app_purchase_android: ^0.4.0+2
 
   # Utilitários
   path_provider: ^2.1.1

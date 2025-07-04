@@ -1,3 +1,4 @@
+import '../services/purchase_service.dart';
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/foundation.dart';
@@ -37,8 +38,12 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
     _setupAnimations();
     _setupHintAnimation();
     _startNewGame();
+    //-- NOVO: A lógica de carregar o anúncio agora verifica se o usuário já é premium
     if (!kIsWeb) {
-      _loadBannerAd();
+      final gameService = Provider.of<GameService>(context, listen: false);
+      if (!gameService.isPremium) {
+        _loadBannerAd();
+      }
     }
   }
 
@@ -147,9 +152,13 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    //-- NOVO: Obtém o GameService aqui para usar em múltiplos lugares
+    final gameService = context.watch<GameService>();
+
     return Scaffold(
       backgroundColor: theme.colorScheme.surface,
-      bottomNavigationBar: _isBannerAdLoaded
+      //-- NOVO: Condição para mostrar o banner foi atualizada
+      bottomNavigationBar: _isBannerAdLoaded && !gameService.isPremium
           ? SizedBox(
               height: _bannerAd!.size.height.toDouble(),
               width: _bannerAd!.size.width.toDouble(),
@@ -161,8 +170,9 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
           children: [
             _buildHeader(context),
             Expanded(
-              child: Consumer<GameService>(
-                builder: (context, gameService, child) {
+              //-- NOVO: Removido o Consumer daqui pois já obtemos o gameService acima
+              child: Builder(
+                builder: (context) {
                   final gameState = gameService.gameState;
                   if (gameState == null) {
                     return Center(
@@ -197,7 +207,6 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
                                       theme.colorScheme.surface.withAlpha(204),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
-                                // MODIFICADO: Usa o nome da categoria vindo do GameState
                                 child: Text(
                                   gameState.displayCategoryName,
                                   style: theme.textTheme.titleLarge
@@ -243,12 +252,10 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Botão de voltar
           IconButton(
             onPressed: () => Navigator.of(context).pop(),
             icon: const Icon(Icons.arrow_back_ios_new_rounded),
           ),
-          // Contador de tentativas
           Consumer<GameService>(
             builder: (context, gameService, child) {
               final gameState = gameService.gameState;
@@ -262,7 +269,6 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
               );
             },
           ),
-          // MODIFICADO: Botões reorganizados na ordem correta
           Consumer<ThemeService>(
             builder: (context, settingsService, child) {
               final gameService = context.watch<GameService>();
@@ -272,6 +278,17 @@ class _GamePageState extends State<GamePage> with TickerProviderStateMixin {
 
               return Row(
                 children: [
+                  //-- CÓDIGO CORRIGIDO PARA O BOTÃO PREMIUM --
+                  if (!gameService.isPremium)
+                    IconButton(
+                      icon: const Icon(Icons.workspace_premium_outlined),
+                      tooltip: 'Remover Anúncios',
+                      onPressed: () {
+                        // Chama o serviço de compras para iniciar o fluxo de pagamento.
+                        context.read<PurchaseService>().buyPremium();
+                      },
+                    ),
+                  // O restante dos botões agora está no lugar certo
                   IconButton(
                     icon: Icon(
                       isDarkMode
